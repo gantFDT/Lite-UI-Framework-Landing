@@ -39,7 +39,7 @@ const Page = (props: any) => {
     notification.open({
       message: `欢迎`,
       description:
-        <>😄 欢迎使用, 欢迎提PR和issue,感谢star,多多关照 🙏</>,
+        <>欢迎使用, 如果帮助到了你，请麻烦给个star,谢谢 🙏</>,
       placement: "bottomRight",
       duration: 0,
     });
@@ -49,8 +49,8 @@ const Page = (props: any) => {
   return (
     <div className="home-page" style={{
       backgroundImage: 'linear-gradient(-135deg, #ffb307 0%, #ff8d00 100%)',
-      backgroundSize:'100% 100vh',
-      backgroundRepeat:'no-repeat'
+      backgroundSize: '100% 100vh',
+      backgroundRepeat: 'no-repeat'
     }}>
       <Header key="header" />
 
@@ -87,7 +87,7 @@ const Page = (props: any) => {
 
 
 
-     
+
 
 
       <Block
@@ -100,12 +100,12 @@ const Page = (props: any) => {
         }, {
           img: tableImg,
           title: '智能表格模板',
-          content: '可以单独控制每个数据单元的编辑状态'
+          content: '基于smartTable实现的快速增删改查页面模板'
         }, {
           img: formImg,
           title: '智能详情模板',
           content: '基于收敛的容器组件和schema-form实现的快速读写详情页面模板'
-        },{
+        }, {
           img: themeImg,
           title: '自定义主题',
           content: '基于css var 实现的非常灵活的自定义主题'
@@ -119,21 +119,30 @@ const Page = (props: any) => {
           content: '可基于百度翻译一句命令生成国际化字典'
         }]}
         span={2}
-        extra={
-          <div className="full-width" style={{ maxWidth: 1000, marginTop: 50 }}>
-            <Row>
-              
-              <Col {...span}>
-                <pre className="language-bash">
-                  <code >
-                    {Code.start}
-                  </code>
-                </pre>
-              </Col>
-            </Row>
-          </div>
-        }
       />
+
+
+      <div className="title" style={{ marginTop: 50, textAlign: 'center' }}>
+        开始使用
+      </div>
+
+      <div className="description" style={{ textAlign: 'center' }}>
+        命令行运行下列命令，快速启动开发服务：
+      </div>
+
+      <div className="full-width" style={{ maxWidth: 1000, marginTop: 50, marginBottom: 50 }}>
+        <Row>
+
+          <Col {...span}>
+            <pre className="language-bash">
+              <code >
+                {Code.start}
+              </code>
+            </pre>
+          </Col>
+        </Row>
+      </div>
+
 
       <Footer />
 
