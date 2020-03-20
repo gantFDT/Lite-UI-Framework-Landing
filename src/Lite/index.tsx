@@ -76,7 +76,7 @@ const Page = (props: any) => {
 
           </div>
           <Button size="large" className="gant-margin-v-20" href="http://favori.gitee.io/lite-ui-framework/" target="_blank">预览</Button>
-          <Button size="large" className={classnames('gant-margin-v-20', 'gant-margin-h-20')} href="https://github.com/gantFDT/lite-ui-framework" target="_blank"><Icon type="github" /> github</Button>
+          <Button size="large" className={classnames('gant-margin-v-20', 'gant-margin-h-20')} href="http://github.com/gantFDT/lite-ui-framework" target="_blank"><Icon type="github" /> github</Button>
         </>}
       />
 
