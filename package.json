@@ -8,7 +8,7 @@
     "lint:style": "stylelint \"src/Home/**/*.less\" --syntax less",
     "gh-pages": "gh-pages -d dist",
     "gitconfig": "git remote add gitee git@gitee.com:favori/gantd-landing.git && git remote add github git@github.com:yuanguandong/gantd-landing.git",
-    "gitpush": "git pull gitee master && git push gitee master && git push github master"
+    "gitpush": "git push"
   },
   "dependencies": {
     "antd": "^3.10.3",
