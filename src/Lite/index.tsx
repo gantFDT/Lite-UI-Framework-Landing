@@ -16,6 +16,14 @@ import themeImg from './images/theme.png'
 import layerImg from './images/layer.png'
 import globalImg from './images/global.png'
 import dashboardImg from './images/dashboard.png'
+import Player from 'griffith'
+
+const sources = {
+  hd: {
+    play_url: 'http://data.yiheyishun.com/lite.mp4',
+  }
+}
+
 
 
 import Code from './Code'
@@ -55,8 +63,6 @@ const Page = (props: any) => {
       <Header key="header" />
 
 
-
-
       <Banner id="banner" key="banner"
         style={{ height: 'calc(100vh - 61px)', color: '#000' }}
         img={bannerImg}
@@ -69,16 +75,10 @@ const Page = (props: any) => {
             <div>Lite UI Framework是一个基于ant pro定制的一个轻量级快速开发方案</div>
 
           </div>
-          <Button size="large" className="gant-margin-v-20">预览</Button>
-          <Button size="large" className={classnames('gant-margin-h-20', 'gant-margin-v-20')}>开始使用</Button>
-          <div className="github"><Icon type="github" /> github</div>
+          <Button size="large" className="gant-margin-v-20" href="http://favori.gitee.io/lite-ui-framework/" target="_blank">预览</Button>
+          <Button size="large" className={classnames('gant-margin-v-20', 'gant-margin-h-20')} href="https://github.com/gantFDT/lite-ui-framework" target="_blank"><Icon type="github" /> github</Button>
         </>}
       />
-
-
-
-
-
 
 
 
@@ -119,7 +119,16 @@ const Page = (props: any) => {
           content: '可基于百度翻译一句命令生成国际化字典'
         }]}
         span={2}
+        extra={
+          <div className="full-width" style={{ maxWidth: 1000, marginTop: 50, marginBottom: 50 }}>
+            <div className='player'>
+              <Player sources={sources} />
+            </div>
+          </div>
+        }
       />
+
+
 
 
       <div className="title" style={{ marginTop: 50, textAlign: 'center' }}>

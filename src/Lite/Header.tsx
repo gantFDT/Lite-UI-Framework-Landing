@@ -38,8 +38,8 @@ export default function Header(props: any) {
             </h1> */}
           </div>
           <div className='h1'>
-            <span className="gant-margin-h-20"><a href="#datacell"><Icon type='book' theme='filled' /> 文档</a></span>
-            <span className="gant-margin-h-20"><a href="#datacell"><Icon type='github' /> GITHUB</a></span>
+            <span className="gant-margin-h-20"><a target="_blank" href="https://www.yuque.com/favori/sccf5s/quickstart"><Icon type='book' theme='filled' /> 文档</a></span>
+            <span className="gant-margin-h-20"><a target="_blank" href="https://github.com/gantFDT/lite-ui-framework"><Icon type='github' /> GITHUB</a></span>
           </div>
         </div>
 

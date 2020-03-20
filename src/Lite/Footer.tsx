@@ -48,10 +48,16 @@ export default function Footer(props: any) {
                   链接
               </div>
                 <div className="link">
-                  <a href="">文档</a>
+                  <a href="https://www.yuque.com/favori/sccf5s/quickstart" target="_blank">文档</a>
                 </div>
                 <div className="link">
-                  <a href="">GITHUB</a>
+                  <a href="https://github.com/gantFDT/lite-ui-framework" target="_blank">GITHUB</a>
+                </div>
+                <div className="link">
+                  <a href="http://gant.design" target="_blank">GantD</a>
+                </div>
+                <div className="link">
+                  <a href="https://ant.design" target="_blank">AntD</a>
                 </div>
               </Col>
             </QueueAnim>
